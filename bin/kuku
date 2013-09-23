@@ -7,21 +7,28 @@ program
   .version('0.0.1');
 
 program
-  .command('start [appPath]')
+  .command('start [path]')
   .description('Start App')
   .action(function(appPath){
     kuku.start(appPath);
   });
 
 program
-  .command('stop [appPath]')
+  .command('stop [path]')
   .description('Stop App')
   .action(function(appPath){
     kuku.stop(appPath);
   });
 
 program
-  .command('restart [appPath]')
+  .command('stopall')
+  .description('Stop all running scripts')
+  .action(function(){
+    kuku.stopAll();
+  });
+
+program
+  .command('restart [path]')
   .description('Restart App')
   .action(function(appPath){
     kuku.restart(appPath);
@@ -32,6 +39,20 @@ program
   .description('List Apps running')
   .action(function(){
     kuku.list();
+  });
+
+program
+  .command('listapps')
+  .description('List Apps in config')
+  .action(function(){
+    kuku.listapps();
+  });
+
+program
+  .command('remove [path|index]')
+  .description('Remove an app of config')
+  .action(function(appPath){
+    kuku.remove(appPath);
   });
 
 program

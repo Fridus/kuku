@@ -1,16 +1,20 @@
-#kuku
+# kuku
+
 A simple CLI tool for ensuring that a given script runs continuously. It use [forever](http://github.com/nodejitsu/forever).
 
-##Usage
+## Usage
 ```
   Usage: kuku [options] [command]
 
   Commands:
 
-    start [appPath]        Start App
-    stop [appPath]         Stop App
-    restart [appPath]      Restart App
+    start [path]           Start App
+    stop [path]            Stop App
+    stopall                Stop all running scripts
+    restart [path]         Restart App
     list                   List Apps running
+    listapps               List Apps in config
+    remove [path|index]    Remove an app of config
     *
 
   Options:
@@ -19,7 +23,7 @@ A simple CLI tool for ensuring that a given script runs continuously. It use [fo
     -V, --version  output the version number
 ```
 
-##Environment variables
+## Environment variables
 Use file ".env" in your script's directory.
 
 Example:
@@ -28,8 +32,7 @@ NODE_ENV=production
 NUMBER=1234
 ```
 
-##To do:
-- Remove app
+## To do:
 - Status of app
 - Tests...
 - Fix: Error if file list.json is empty
