@@ -1,0 +1,19 @@
+{
+  "name": "kuku",
+  "version": "0.0.1",
+  "description": "A simple CLI tool for ensuring that a given script runs continuously. It use forever",
+  "author": {
+    "name": "Florent Detry",
+    "email": "florent@fdetry.be"
+  },
+  "bin": {
+    "forever": "./bin/kuku"
+  },
+  "main": "./lib/kuku",
+  "dependencies": {
+    "commander": "~2.0.0",
+    "forever": "~0.10.8",
+    "winston": "~0.7.2",
+    "async": "~0.2.9"
+  }
+}

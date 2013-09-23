@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+    kuku = require('../lib/kuku');
+
+program
+  .version('0.0.1');
+
+program
+  .command('start [appPath]')
+  .description('Start App')
+  .action(function(appPath){
+    kuku.start(appPath);
+  });
+
+program
+  .command('stop [appPath]')
+  .description('Stop App')
+  .action(function(appPath){
+    kuku.stop(appPath);
+  });
+
+program
+  .command('restart [appPath]')
+  .description('Restart App')
+  .action(function(appPath){
+    kuku.restart(appPath);
+  });
+
+program
+  .command('list')
+  .description('List Apps running')
+  .action(function(){
+    kuku.list();
+  });
+
+program
+  .command('*')
+  .action(function(){
+    console.log('Unknow command');
+  });
+
+program.parse(process.argv);
