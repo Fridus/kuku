@@ -1,15 +1,26 @@
 {
   "name": "kuku",
   "version": "0.0.1",
+  "preferGlobal": "true",
   "description": "A simple CLI tool for ensuring that a given script runs continuously. It use forever",
   "author": {
     "name": "Florent Detry",
     "email": "florent@fdetry.be"
   },
   "bin": {
-    "forever": "./bin/kuku"
+    "kuku": "./bin/kuku"
   },
   "main": "./lib/kuku",
+  "keywords": [
+    "cli",
+    "tools",
+    "running script",
+    "continuously"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/florent/kuku.git"
+  },
   "dependencies": {
     "commander": "~2.0.0",
     "forever": "~0.10.8",

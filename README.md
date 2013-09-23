@@ -27,7 +27,7 @@ A simple CLI tool for ensuring that a given script runs continuously. It use [fo
 Use file ".env" in your script's directory.
 
 Example:
-```
+```bash
 NODE_ENV=production
 NUMBER=1234
 ```
@@ -35,7 +35,6 @@ NUMBER=1234
 ## To do:
 - Status of app
 - Tests...
-- Fix: Error if file list.json is empty
 
 
 #### Author: [Florent Detry](http://github.com/fridus)
