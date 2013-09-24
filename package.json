@@ -1,6 +1,6 @@
 {
   "name": "kuku",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "preferGlobal": "true",
   "description": "A simple CLI tool for ensuring that a given script runs continuously. It use forever",
   "author": {
@@ -26,5 +26,10 @@
     "forever": "~0.10.8",
     "winston": "~0.7.2",
     "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.5.1",
+    "matchdep": "~0.1.2"
   }
 }
