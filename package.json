@@ -1,6 +1,6 @@
 {
   "name": "kuku",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "preferGlobal": "true",
   "description": "A simple CLI tool for ensuring that a given script runs continuously. It use forever",
   "author": {
