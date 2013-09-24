@@ -2,6 +2,12 @@
 
 A simple CLI tool for ensuring that a given script runs continuously. It use [forever](http://github.com/nodejitsu/forever).
 
+## Install
+
+```bash
+[sudo] npm install -g kuku
+```
+
 ## Usage
 ```
   Usage: kuku [options] [command]
